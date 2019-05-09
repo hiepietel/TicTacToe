@@ -1,0 +1,33 @@
+<MyLayout>
+    cols: 1
+    rows: 2
+    GridLayout:
+        cols: 1
+        rows: 1
+        Label:
+            id: mylabel
+            text:"TicTacToe"
+    GridLayout:
+        cols: 3
+        rows: 3
+        padding: 20
+
+        Button:
+            text: "Click me!"
+            on_press: root.printMe()
+        Button:
+            text: "O"
+            font_color: "red"
+        Button:
+            text: "X"
+        Button:
+            text: "O"
+        Button:
+            text: "O"
+        Button:
+            #margin: 20
+            text: "X"
+        Button:
+            text: "O"
+        Button:
+            text: "0"
