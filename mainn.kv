@@ -8,26 +8,35 @@
             id: mylabel
             text:"TicTacToe"
     GridLayout:
+        id: "grid"
         cols: 3
         rows: 3
         padding: 20
-
         Button:
             text: "Click me!"
-            on_press: root.printMe()
-        Button:
+            id: "btn"
+            on_press: root.printMe(1,1)
+        MyButton:
             text: "O"
             font_color: "red"
-        Button:
+            on_press: self.choose(1,2)
+        MyButton:
             text: "X"
-        Button:
+            on_press: self.choose(1,3)
+        MyButton:
             text: "O"
-        Button:
+            on_press: self.choose(2,1)
+        MyButton:
             text: "O"
-        Button:
+            on_press: self.choose(2,2)
+        MyButton:
             #margin: 20
             text: "X"
-        Button:
+            on_press: self.choose(2,3)
+        MyButton:
             text: "O"
-        Button:
+            on_press: self.choose(3,1)
+        MyButton:
+            text: "0"
+        MyButton:
             text: "0"
